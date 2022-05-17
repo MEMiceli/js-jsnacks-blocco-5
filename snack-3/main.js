@@ -7,53 +7,59 @@
 
 const car = [
     {
-        "marca": fiat,
-        "modello": punto,
-        "alimentazione": benzina,
+        "marca": "fiat",
+        "modello": "punto",
+        "alimentazione": "benzina",
     },
     {
-        "marca": fiat,
-        "modello": barchetta,
-        "alimentazione": benzina,
+        "marca": "fiat",
+        "modello": "barchetta",
+        "alimentazione": "benzina",
     },
     {
-        "marca": ferrari,
-        "modello": enzo,
-        "alimentazione": elettrica,
+        "marca": "ferrari",
+        "modello": "enzo",
+        "alimentazione": "elettrica",
     },
     {
-        "marca": rover,
-        "modello": range,
-        "alimentazione": diesel,
+        "marca": "rover",
+        "modello": "range",
+        "alimentazione": "diesel",
     },
     {
-        "marca": ford,
-        "modello": tiguan,
-        "alimentazione": diesel,
+        "marca": "ford",
+        "modello": "tiguan",
+        "alimentazione": "diesel",
     },
     {
-        "marca": ford,
-        "modello": escort,
-        "alimentazione": benzina,
+        "marca": "ford",
+        "modello": "escort",
+        "alimentazione": "benzina",
     },
     {
-        "marca": nissan,
-        "modello": jsSpecial,
-        "alimentazione": ibrida,
+        "marca": "nissan",
+        "modello": "jsSpecial",
+        "alimentazione": "ibrida",
     },
     {
-        "marca": lamborghini,
-        "modello": Toretto,
-        "alimentazione": benzina,
+        "marca": "lamborghini",
+        "modello": "Toretto",
+        "alimentazione": "benzina",
     },
     {
-        "marca": rover,
-        "modello": sd1,
-        "alimentazione": diesel,
+        "marca": "rover",
+        "modello": "sd1",
+        "alimentazione": "diesel",
     },
     {
-        "marca": ford,
-        "modello": fiesta,
-        "alimentazione": diesel,
+        "marca": "ford",
+        "modello": "fiesta",
+        "alimentazione": "diesel",
     },
-]
+];
+const benzina = car.filter(elm => elm.alimentazione === "benzina");
+const diesel = car.filter(elm => elm.alimentazione === "diesel");
+const altro = car.filter(elm => elm.alimentazione !== "benzina" && elm.alimentazione !== "diesel");
+console.log( benzina, diesel, altro);
+
+// altro metodo con for each

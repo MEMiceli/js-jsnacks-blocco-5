@@ -69,13 +69,13 @@ console.log('peso totale: ${total}gr');
 let grandi = []
 let piccole = []
 for (let i = 0; i < product.length; i++) {
-    if (length > 15){
-        grandi.push[i]
+    if (product[i].length > 15){
+        grandi.push(product[i]);
     } else {
-        piccole.push[i]
+        piccole.push(product[i]);
     }
 
-}
+};
 console.log(grandi,piccole)
 
 
